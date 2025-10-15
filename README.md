@@ -21,3 +21,6 @@ Codes and job folders to reproduce the data in the following preprint:
 * To reproduce the noise model simulations, move to folder **B3_NM_QPU/L50**, execute `python dm_noise_model.py`. One needs to change the noise scaling factor *scale* in the script to produce the data given in files *results_L50_nm_{scale}*, which are used as input for subsequent spectral function analysis.
 * To reproduce the noisy simulation results with Iceberg code for quantum error detection, move to folder **B3_NM_QPU**, and execute scripts `Ice_berg_exp_val_n_meas_{m}.py` with `m` replaced with the number of syndrome measurements. 
 * For the density matrix measurement on IBM and Quantinuum emulators and H1-1, move to folder **B3_NM_QPU/L30**, and adapt the code `dm_IBM.py` (for IBM) and `dm.py` (for Quantinuum-nexus) with your credentials. The results are saved in *results_L30_{label}* files.
+
+## Acknowledgement
+This work was supported by the U.S. Department of Energy (DOE), Office of Science, Basic Energy Sciences, Materials Science and Engineering Division, including the grant of computer time at the National Energy Research Scientific Computing Center (NERSC) in Berkeley, California. The research was performed at the Ames National Laboratory, which is operated for the U.S. DOE by Iowa State University under Contract No. DE-AC02-07CH11358.
